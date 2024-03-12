@@ -387,7 +387,7 @@ def start_animation():#标题和著作权页
 ' `----------------`  `----------------`  `----------------`  `----------------`  `----------------`  `----------------` '
     ]
     printer.print_lines(LOGO)
-    printer.pre_print('github:')
+    printer.pre_print('https://github.com/AHKENPEITA/Keybay.git')
 
 
     printer.wait()
