@@ -1,0 +1,2 @@
+E:\工作\密码工程\text.txt
+E:\工作\密码工程\password.py
