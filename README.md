@@ -2,7 +2,7 @@
 
 ### https://github.com/AHKENPEITA/Keybay.git
 
-待完善：
+## 待完善：
 
 1.校验码4位（大小写、数字两位）
 
