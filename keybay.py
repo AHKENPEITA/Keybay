@@ -1,4 +1,5 @@
 #待完善：
+#0.漏洞：账户数量/菜单选项数量>10时存在漏洞（目前的想法是分页列出，超过10以后就构建一个多页菜单，用[n]或[p]来翻页）
 #1.校验码4位（大小写、数字两位）
 #2.import统一到开头
 #3.允许用户设置默认账户直接使用（c页）
@@ -7,6 +8,7 @@
 #6.完善著作权页（i页）
 #7.完善使用引导（h页）
 #8.创建用户时检查是否重名
+
 
 
 import os
@@ -535,7 +537,6 @@ def use_loop(arg_printer,arg_text,arg_digit,arg_key):#生成密码循环
             str = str+num2char(num)
         return str
 
-
     def char_cipher(char,arg_key):
         key = int(arg_key)
         if char.isupper():
@@ -620,7 +621,7 @@ def use_loop(arg_printer,arg_text,arg_digit,arg_key):#生成密码循环
     for i in range(int(arg_digit)):
         password_code[i] = (int(password_code[i])+int(arg_key[(i%len(arg_key))]))%62
     
-    password_str = num_list2str(password_code)
+    password_str = num_list2str(password_code)#将ASKII码转回字符
 
     password_char_list = add_check_code(list(password_str))
     password = ''.join(password_char_list)
